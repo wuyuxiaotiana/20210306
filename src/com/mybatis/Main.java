@@ -1,5 +1,6 @@
 package com.mybatis;
 
+import com.mybatis.entity.Student;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -19,7 +20,7 @@ public class Main {
         SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
         try (SqlSession session = sqlSessionFactory.openSession(true)) {
            List<Student> list =  session.selectList("selectStudent");
-                   list.forEach(System.out::println);
+           list.forEach(System.out::println);
         }
     }
 }

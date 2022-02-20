@@ -8,13 +8,13 @@
             <transactionManager type="JDBC"/>
             <dataSource type="POOLED">
                 <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
-                <property name="url" value="jdbc:mysql://localhost:3306"/>
+                <property name="url" value="jdbc:mysql://localhost:3306/db01"/>
                 <property name="username" value="root"/>
                 <property name="password" value="a1056110487"/>
             </dataSource>
         </environment>
     </environments>
     <mappers>
-        <mapper resource="src/TestMapper.xml"/>
+        <mapper resource="com/mybatis/entity/TestMapper.xml"/>
     </mappers>
 </configuration>
