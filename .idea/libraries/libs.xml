@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="libs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/libs/lombok.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/libs/mybatis-3.5.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/libs/mysql-connector-java-8.0.23.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
