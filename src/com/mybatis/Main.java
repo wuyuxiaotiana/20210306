@@ -5,6 +5,9 @@ import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -22,5 +25,23 @@ public class Main {
            List<Student> list =  session.selectList("selectStudent");
            list.forEach(System.out::println);
         }
+
     }
+    @Before
+    public void Before(){
+        System.out.println("Before");
+    }
+    @Test
+    public void Test1(){
+        System.out.println("Test1");
+    }
+    @Test
+    public void Test2(){
+        System.out.println("Test2");
+    }
+    @After
+    public void After(){
+        System.out.println("After");
+    }
+
 }
