@@ -1,22 +1,16 @@
 package zheng.javalearn;
 
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
+
+/**
+ * @author Zheng
+ */
+@Setter
+@Getter
+@EqualsAndHashCode
 public class ApfDto {
     private String name;
     private String age;
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getAge() {
-        return age;
-    }
-
-    public void setAge(String age) {
-        this.age = age;
-    }
 }
