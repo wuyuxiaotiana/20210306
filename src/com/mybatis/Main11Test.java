@@ -28,6 +28,7 @@ public class Main11Test {
            list.forEach(System.out::println);
         }
 System.out.println("aaa");
+        System.out.println("ccc");
     }
 
 
