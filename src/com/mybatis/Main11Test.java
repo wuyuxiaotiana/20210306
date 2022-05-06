@@ -27,10 +27,6 @@ public class Main11Test {
            List<Student> list =  session.selectList("selectStudent");
            list.forEach(System.out::println);
         }
-System.out.println("aaa");
-        System.out.println("ccc");
-        System.out.println("eee");
-        System.out.println("fff");
     }
 
 
