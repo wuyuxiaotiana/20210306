@@ -30,7 +30,7 @@ public class Main11Test {
 System.out.println("aaa");
         System.out.println("ccc");
         System.out.println("ddd");
-        System.out.println("asdasd");
+        System.out.println("cc");
         System.out.println("sss");
     }
 
