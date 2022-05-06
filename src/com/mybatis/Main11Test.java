@@ -27,6 +27,7 @@ public class Main11Test {
            List<Student> list =  session.selectList("selectStudent");
            list.forEach(System.out::println);
         }
+        System.out.println(3);
     }
 
 
