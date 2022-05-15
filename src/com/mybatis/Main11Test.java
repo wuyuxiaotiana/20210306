@@ -96,5 +96,5 @@ public class Main11Test {
     public void after(){
         System.out.println("After");
     }
-1
+2
 }
