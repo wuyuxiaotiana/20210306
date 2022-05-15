@@ -26,8 +26,8 @@ public class Main11Test {
         InputStream inputStream = Resources.getResourceAsStream(resource);
         SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
         try (SqlSession session = sqlSessionFactory.openSession(true)) {
-           List<Student> list =  session.selectList("selectStudent");
-           list.forEach(System.out::println);
+            List<Student> list =  session.selectList("selectStudent");
+            list.forEach(System.out::println);
         }
         System.out.println("1");
         System.out.println("2");
@@ -37,49 +37,49 @@ public class Main11Test {
     }
 
 
-@Test
+    @Test
 
-public void test3 (){
-    HashMap <ApfDto , String> m1;
-    m1 = new HashMap<>();
+    public void test3 (){
+        HashMap <ApfDto , String> m1;
+        m1 = new HashMap<>();
 
-    ApfDto a1 = new ApfDto() ;
-a1.setName("a1");
-a1.setAge("10");
+        ApfDto a1 = new ApfDto() ;
+        a1.setName("a1");
+        a1.setAge("10");
 
-    ApfDto a2 = new ApfDto() ;
-    a2.setName("a2");
-    a2.setAge("11");
-    m1.put(a1,"a1");
-    m1.put(a2,"a2");
-    ApfDto a3 = new ApfDto() ;
-    a3.setName("a1");
-    a3.setAge("10");
-    System.out.println(m1.get(a3));
-    System.out.println(m1.containsKey(a3));
+        ApfDto a2 = new ApfDto() ;
+        a2.setName("a2");
+        a2.setAge("11");
+        m1.put(a1,"a1");
+        m1.put(a2,"a2");
+        ApfDto a3 = new ApfDto() ;
+        a3.setName("a1");
+        a3.setAge("10");
+        System.out.println(m1.get(a3));
+        System.out.println(m1.containsKey(a3));
 
-}
-
-
-@Test
-public void aaaa(){
-ApfDto a = new ApfDto();
-
-List<ApfDto> b = new ArrayList<>();
-    a.setAge("123");
-    a.setName("a");
-b.add(a);
-    System.out.println(b);
-a = new ApfDto();
-a.setAge("123");
-    a.setName("b");
-b.add(a);
-    System.out.println(b);
-
-    Map<String,String> ccc = new HashMap<>();
+    }
 
 
-}
+    @Test
+    public void aaaa(){
+        ApfDto a = new ApfDto();
+
+        List<ApfDto> b = new ArrayList<>();
+        a.setAge("123");
+        a.setName("a");
+        b.add(a);
+        System.out.println(b);
+        a = new ApfDto();
+        a.setAge("123");
+        a.setName("b");
+        b.add(a);
+        System.out.println(b);
+
+        Map<String,String> ccc = new HashMap<>();
+
+
+    }
     @Before
     public void before(){
         System.out.println("Before");
@@ -96,5 +96,5 @@ b.add(a);
     public void after(){
         System.out.println("After");
     }
-1
+2
 }
