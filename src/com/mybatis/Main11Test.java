@@ -12,8 +12,10 @@ import zheng.javalearn.ApfDto;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author Zheng
@@ -55,6 +57,27 @@ a1.setAge("10");
     a3.setAge("10");
     System.out.println(m1.get(a3));
     System.out.println(m1.containsKey(a3));
+
+}
+
+
+@Test
+public void aaaa(){
+ApfDto a = new ApfDto();
+
+List<ApfDto> b = new ArrayList<>();
+    a.setAge("123");
+    a.setName("a");
+b.add(a);
+    System.out.println(b);
+a = new ApfDto();
+a.setAge("123");
+    a.setName("b");
+b.add(a);
+    System.out.println(b);
+
+    Map<String,String> ccc = new HashMap<>();
+
 
 }
     @Before
